@@ -25,25 +25,21 @@ Evita estos errores comunes:
 
 ## Instalación
 1. Clona el repositorio:
-  
-  ```
+   ```bash
    git clone https://github.com/papercri/IT_Academy_S1_2_Bootstrap_and_SASS.git
-
-2. Accede al directorio del proyecto:
- 
-  ```
-  cd IT_Academy_S1_2_Bootstrap_and_SASS
-   
-3. Instala las dependencias del proyecto:
-   
    ```
+2. Accede al directorio del proyecto:
+   ```bash
+   cd IT_Academy_S1_2_Bootstrap_and_SASS
+   ```
+3. Instala las dependencias del proyecto:
+   ```bash
    npm install
-   
+   ```
 4. Inicia el servidor de desarrollo con Vite:
-    
-    ```
+   ```bash
    npm run dev
-   
+   ```
 
 ## Ejercicios
 ### Nivel 1
@@ -81,5 +77,3 @@ Evita estos errores comunes:
 ### Nivel 3 (Opcional)
 #### **Ejercicio 6: Estados Activos y Efectos Hover**
 - Personalizar estados activos en botones, enlaces, tabs y avisos.
-
-

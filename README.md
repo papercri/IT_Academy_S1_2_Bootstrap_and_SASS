@@ -28,22 +28,22 @@ Evita estos errores comunes:
   
   ```
    git clone https://github.com/papercri/IT_Academy_S1_2_Bootstrap_and_SASS.git
-    ```
+
 2. Accede al directorio del proyecto:
  
   ```
   cd IT_Academy_S1_2_Bootstrap_and_SASS
-   ```
+   
 3. Instala las dependencias del proyecto:
    
    ```
    npm install
-   ```
+   
 4. Inicia el servidor de desarrollo con Vite:
     
     ```
    npm run dev
-   ```
+   
 
 ## Ejercicios
 ### Nivel 1

@@ -1,0 +1,22 @@
+{
+  "name": "it_academy_s1_2_bootstrap_and_sass",
+  "version": "1.0.0",
+  "description": "Comprender y practicar SASS. Crear webs con Bootstrap 5. Entender el funcionamiento de los componentes de Bootstrap. Realizar validaciones de formularios.",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.85.0",
+    "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3"
+  }
+  
+}

@@ -2,17 +2,21 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 $grey-text: #808080;
+$light-grey: #e3e2e2;
 $text-color: #1c1b1b;
 $custom-margin:5rem;
 
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", serif;
   color: $text-color;
 }
 
 .mt-custom {
-    margin-top: $custom-margin;
-  }
+  margin-top: $custom-margin;
+}
+.mb-custom {
+  margin-bottom: $custom-margin;
+}
 .btn-primary{
   background-color: $primary
 }
@@ -20,7 +24,7 @@ body{
     background-color: $secondary;
     color:white
   }
-  .card-text-grey{
+  .text-grey{
     color: $grey-text;
   }
   .hero-shape{
@@ -32,6 +36,16 @@ body{
     position:absolute;
     bottom:0;
     right:-30px;
+  }
+  .hero-shape-rev{
+    background-color: $primary;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    width:70%;
+    height:70%;
+    position:absolute;
+    bottom:-50px;
+    left:-30px;
   }
   .navbar{
     .navbar-toggler {
@@ -47,21 +61,58 @@ body{
       border: 1px solid;
       border-radius: var(--bs-navbar-toggler-border-radius);
       transition: var(--bs-navbar-toggler-transition);
-      border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+      border: none;
       padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    }
   }
-
+  .nav-tabs {
+    border: none;
+    .nav-link{
+      border:none;
+      padding:10px 40px 20px;
+      border-bottom:2px solid $light-grey;
+      color:$grey-text;
+      &.active{
+        border-bottom:4px solid $secondary;
+      }
+    }
   }
-  @media (max-width: 758px) {
+  @media (max-width: 768px) {
     .mt-custom {
-      margin-top: 2rem;
+      margin-top: 4rem;
+    }
+    .mb-custom {
+      margin-bottom: 4rem;
+    }
+    .nav-tabs {
+      flex-direction: column;
+      border-top:1px solid $light-grey;
+      .nav-link{
+        border-bottom:1px solid $light-grey;
+        padding:20px 10px 10px;
+        position: relative;
+        &.active{
+          border-bottom:1px solid $light-grey;
+          background-color: transparent;
+          &::after{
+            content:"";
+            width:150px;
+            height:4px;
+            background-color: $secondary;
+            display: block;
+            position: relative;
+            margin:0 auto;
+            top:10px;
+          }
+          
+        }
+      }
     }
   }
   @media (min-width: 1200px) {
-    h1, .h1 {
+    h1, .h1, h2, h3{
         line-height:1.1;
-        font-weight: 600;
+        font-weight: 700;
         
     }
-   
 }

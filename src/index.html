@@ -3,12 +3,68 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
     <title>Landing Page con Bootstrap 5, Vite y SASS</title>
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
+    <div class="container-lg">
+      <div class="row mt-5">
+        <div class="col-6">
+          <nav class="navbar navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="img/logo-bookmark.svg" alt="Logo Bookmark" />
+
+              </a>
+            </div>
+          </nav>
+        </div>
+        <div class="col-6  d-flex justify-content-md-center justify-content-end ">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-uppercase ">
+                  <li class="nav-item">
+                    <a class="nav-link active px-md-4" aria-current="page" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link px-md-4" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link px-md-4" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link btn btn-secondary  px-md-4" href="#">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row  mt-custom  d-flex">
+        <div class="col-12 col-md-6  d-flex flex-column justify-content-center">
+          <div class="card border-0">
+            <div class="card-body ">
+              <h1 class="card-title">A simple Bookmark Manager</h1>
+              <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+              <a href="#" class="btn btn-primary">Get it in Chrome</a>
+              <a href="#" class="btn btn-light">Get it in Firefox</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 position-relative">
+          <div class="hero-shape">
+            
+          </div>
+           <img src="img/illustration-hero.svg" alt="Illustration Hero" class="position-relative img-fluid"/>  
+        </div>
+      </div>
+
     </div>
     <script type="module" src="./js/main.js"></script>
   </body>

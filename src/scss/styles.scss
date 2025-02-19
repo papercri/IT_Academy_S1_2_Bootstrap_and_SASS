@@ -1,50 +1,5 @@
-// 1. Importar las variables y funciones de Bootstrap
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins";
 
-// 2. Sobrescribir variables de Bootstrap antes de importar los estilos principales
-$primary: #5265E1;
-$secondary: #FA5959;
-$success: #28a745;
-$danger: #dc3545;
-$warning: #ffc107;
-$info: #17a2b8;
+@import "~bootstrap/scss/bootstrap";
+@import "main";
 
-// Fuente y tamaños
-$font-family-base: 'Poppins', sans-serif;
-$font-size-base: 1rem;
 
-// Personalización de botones
-$btn-border-radius: 8px;
-$btn-padding-y: 0.75rem;
-$btn-padding-x: 1.5rem;
-
-// 3. Importar Bootstrap con las nuevas variables
-@import "bootstrap/scss/bootstrap";
-
-// 4. Estilos adicionales personalizados
-body {
-  background-color: #f8f9fa;
-  color: #333;
-}
-
-.navbar {
-  background-color: $primary;
-  .nav-link {
-    color: white;
-    &:hover {
-      color: $secondary;
-    }
-  }
-}
-
-.btn-custom {
-  background-color: $primary;
-  color: white;
-  border-radius: $btn-border-radius;
-  padding: $btn-padding-y $btn-padding-x;
-  &:hover {
-    background-color: darken($primary, 10%);
-  }
-}

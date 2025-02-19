@@ -1,0 +1,27 @@
+//Variables
+$primary: #5265E1;
+$secondary: #FA5959;
+
+$custom-margin:5rem;
+.mt-custom {
+    margin-top: $custom-margin;
+  }
+.btn-primary{
+  background-color: $primary
+}
+.btn-secondary{
+    background-color: $secondary;
+    color:white
+  }
+
+  .hero-shape{
+    background-color: $primary;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    width:400px;
+    height:300px;
+    position:absolute;
+    bottom:0;
+    right:-30px;
+  }
+ 

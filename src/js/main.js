@@ -23,3 +23,19 @@ import * as bootstrap from 'bootstrap'
         }, false)
       })
   })()
+
+  //Mobile menu
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("mobileMenuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const closeMenu = document.getElementById("closeMenu");
+
+    menuToggle.addEventListener("click", function () {
+        mobileMenu.classList.add("active");
+    });
+
+    closeMenu.addEventListener("click", function () {
+        mobileMenu.classList.remove("active");
+    });
+});

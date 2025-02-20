@@ -10,26 +10,53 @@
     <title>Landing Page con Bootstrap 5, Vite y SASS</title>
   </head>
   <body>
-    <div class="container py-4 mb-custom">
+    <header class="container pt-4 mb-custom">
     <!-- Nav -->
       <div class="row mt-4 ">
        <!-- Logo -->
         <div class="col">
           <nav class="navbar navbar-light ">
-            <div class="container">
               <a class="navbar-brand" href="#">
                 <img src="img/logo-bookmark.svg" alt="Logo Bookmark" />
               </a>
-            </div>
           </nav>
         </div>
        <!-- Menu -->
-        <div class="col d-flex justify-content-md-center justify-content-end ">
+        <div class="col d-flex justify-content-end ">
           <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="container-fluid d-flex justify-content-end">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+            <div class="d-flex justify-content-end">
+              <button class="navbar-toggler custom-toggler" type="button" id="mobileMenuToggle">
+                <span class="navbar-toggler-icon fs-3"></span>
+            </button>
+
+          <!-- Mobile Menu -->
+            <div id="mobileMenu" class="mobile-menu p-4">
+              <div class="d-flex justify-content-between w-100">
+                <a class="navbar-brand" href="#">
+                  <img src="img/logo-bookmarkW.svg" alt="Logo Bookmark" />
+                </a>
+                <button class="close-menu" id="closeMenu">&times;</button>
+              </div>
+              <ul class="nav flex-column text-uppercase w-100 mt-3">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link btn btn-secondary shadow-sm mt-5" href="#">Login</a>
+                  </li>
+              </ul>
+              <div class="social d-flex gap-5 ">
+                <img src="img/icon-facebook.svg" alt="Logo Facebook" />
+                <img src="img/icon-twitter.svg" alt="Logo Twitter" />
+              </div>
+            </div>
+
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav text-uppercase ">
                   <li class="nav-item">
@@ -48,10 +75,16 @@
               </div>
             </div>
           </nav>
+
+
+
+          
         </div>
       </div>
+    </header>
+    <main class="container pb-4 mb-custom">
     <!-- Hero -->
-      <div class="row  mt-custom  d-flex gap-5 ">
+      <div class="row  d-flex gap-5 ">
         <div class="col-lg col-md-12  d-flex flex-column justify-content-center  order-last order-lg-first">
           <div class="card border-0">
             <div class="card-body text-center text-md-start">
@@ -281,9 +314,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
   <!-- Blog -->
-    <div class="container-fluid blog">
+    <section class="container-fluid blog">
       <div class="row text-center small-row">
         <div class="col-10 col-md-5 mx-auto text-center">
           <p class="blog-sup-title">35.000+ already joined</p>
@@ -305,7 +338,11 @@
         </div>
         
       </div>
-    </div>
+    </section>
+  <!-- Blog -->
+   <footer>
+
+   </footer>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

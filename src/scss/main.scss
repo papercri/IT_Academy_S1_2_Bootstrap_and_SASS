@@ -16,6 +16,9 @@ body{
 h1, .h1, h2, h3{
   font-weight: 700;
 }
+h2, h3{
+  margin-bottom: $spacer;
+}
 .mt-custom {
   margin-top: $custom-margin;
 }
@@ -120,6 +123,17 @@ h1, .h1, h2, h3{
       padding:0 $spacer ($spacer * 2) $spacer;
     }
 
+    
+  }
+  .accordion{
+    border-top:1px solid $border-color;
+    border-bottom:1px solid $border-color;
+    button{
+      &::after{
+        color:$primary;
+        font-weight: 700;
+      }
+    }
     
   }
   @media (max-width: 768px) {

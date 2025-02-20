@@ -136,6 +136,22 @@ h2, h3{
     }
     
   }
+  .blog{
+    background-color: $primary;
+    padding:($spacer * 3);
+    color: white;
+    .blog-sup-title{
+      text-transform: uppercase;
+      font-size: 10px;
+      color:$light-grey;
+      letter-spacing:.4em;
+      font-weight: 600;;
+      margin-bottom: ($spacer * 2);
+    }
+    .blog-title{
+      font-weight: 500;;
+    }
+  }
   @media (max-width: 768px) {
     .mt-custom {
       margin-top: 4rem;
@@ -175,6 +191,6 @@ h2, h3{
       font-size: 1rem;
     }
     h1, .h1, h2, h3{
-      line-height:1.1;
+      line-height:1.2;
     }
   }

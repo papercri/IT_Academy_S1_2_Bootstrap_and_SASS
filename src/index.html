@@ -10,7 +10,7 @@
     <title>Landing Page con Bootstrap 5, Vite y SASS</title>
   </head>
   <body>
-    <div class="container py-4">
+    <div class="container py-4 mb-custom">
     <!-- Nav -->
       <div class="row mt-4 ">
        <!-- Logo -->
@@ -281,8 +281,30 @@
           </div>
         </div>
       </div>
+    </div>
+  <!-- Blog -->
+    <div class="container-fluid blog">
+      <div class="row text-center small-row">
+        <div class="col-10 col-md-5 mx-auto text-center">
+          <p class="blog-sup-title">35.000+ already joined</p>
+          <h3 class="blog-title">Stay up-to-date with what we are doing</h3>
+        
+        
+          <form class=" mt-4 needs-validation" novalidate>
+            <div class="form-input w-100 d-flex flex-wrap justify-content-between">
+              <input type="email" class="form-control w-auto inline-block me-4"  placeholder="Enter your email address" id="validationCustom01" required>
+              <button class="btn btn-secondary shadow-sm text-nowrap w-auto inline-block" type="submit">Submit form</button>
+              <p class="invalid-feedback block">
+                Please enter your email address.
+              </p>
+            </div>
+            
 
-     </div>
+       
+          </form>
+        </div>
+        
+      </div>
     </div>
     <script type="module" src="./js/main.js"></script>
   </body>

@@ -10,7 +10,7 @@
     <title>Landing Page con Bootstrap 5, Vite y SASS</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container py-4">
     <!-- Nav -->
       <div class="row mt-4 ">
        <!-- Logo -->
@@ -52,20 +52,20 @@
       </div>
     <!-- Hero -->
       <div class="row  mt-custom  d-flex gap-5 ">
-        <div class="col-lg col-sm-12  d-flex flex-column justify-content-center  order-last order-lg-first">
+        <div class="col-lg col-md-12  d-flex flex-column justify-content-center  order-last order-lg-first">
           <div class="card border-0">
             <div class="card-body text-center text-md-start">
               <h1 class="card-title mb-3">A simple Bookmark Manager</h1>
               <p class="card-text mb-4 text-grey">A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.</p>
-              <div class="buttons d-flex flex-nowrap justify-content-center justify-content-sm-start">
-                <a href="#" class="btn btn-primary me-4 shadow-sm btn-lg">Get it in Chrome</a>
-                <a href="#" class="btn btn-light shadow-sm btn-lg">Get it in Firefox</a>
+              <div class="buttons d-flex flex-nowrap justify-content-center justify-content-md-start">
+                <a href="#" class="btn btn-primary me-4 shadow-sm responsiveButton btn-lg">Get it in Chrome</a>
+                <a href="#" class="btn btn-light shadow-sm responsiveButton btn-lg">Get it in Firefox</a>
               </div>
               
             </div>
           </div>
         </div>
-        <div class="col-lg col-sm-12 position-relative order-first order-lg-last">
+        <div class="col-lg col-md-12 position-relative order-first order-lg-last">
           <div class="hero-shape"></div>
           <div class="text-center">
             <img src="img/illustration-hero.svg" alt="Illustration Hero" class="position-relative img-fluid"/>  
@@ -73,100 +73,156 @@
         </div>
       </div>
     <!-- Fetures -->
-     <div class="row mt-custom justify-content-center">
-        <div class="col-10 col-md-6 mx-auto text-center">
+      <div class="row mt-custom justify-content-center">
+        <div class="col-10 col-md-8 mx-auto text-center">
           <h2>Features</h2>
           <p class="text-grey">
             A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.
           </p>
         </div>
-      <!-- Tabs -->
-        <div class="row mt-5 justify-content-center">
-          <div class="col">
-            <nav>
-              <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Simple Bookmarking</button>
-                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Speedy Searching</button>
-                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Easy Sharing</button>
-              </div>
-            </nav>
-            <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      </div>
+    <!-- Tabs -->
+      <div class="row mt-5 justify-content-center">
+        <div class="col">
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Simple Bookmarking</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Speedy Searching</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Easy Sharing</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
-              <!-- Feature 1 -->
-                <div class="row  mt-custom  d-flex gap-5 ">
-                  <div class="col-lg col-sm-12 position-relative mb-custom ">
-                    <div class="hero-shape-rev"></div>
-                    <div class="text-center">
-                      <img src="img/illustration-features-tab-1.svg" alt="Illustration Hero" class="position-relative img-fluid"/>  
-                    </div>
+            <!-- Feature 1 -->
+              <div class="row  mt-custom  d-flex gap-5 ">
+                <div class="col-lg col-md-12 position-relative mb-custom ">
+                  <div class="hero-shape-rev"></div>
+                  <div class="text-center">
+                    <img src="img/illustration-features-tab-1.svg" alt="Illustration Hero" class="position-relative img-fluid"/>  
                   </div>
-                  <div class="col-lg col-sm-12  d-flex flex-column justify-content-center mb-custom ">
-                    <div class="card border-0">
-                      <div class="card-body text-center text-md-start">
-                        <h3 class="card-title mb-3">Bookmark in one click</h3>
-                        <p class="card-text mb-4 text-grey">A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.</p>
-                        <a href="#" class="btn btn-primary me-4 shadow-sm btn-lg  d-none d-md-inline">More Info</a>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  
                 </div>
-
-              </div>
-              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-
-              <!-- Feature 2 -->
-                <div class="row  mt-custom  d-flex gap-5 ">
-                  <div class="col-lg col-sm-12 position-relative mb-custom ">
-                    <div class="hero-shape-rev"></div>
-                    <div class="text-center">
-                      <img src="img/illustration-features-tab-2.svg" alt="Illustration Hero" class="position-relative img-fluid"/>  
+                <div class="col-lg col-md-12  d-flex flex-column justify-content-center mb-custom ">
+                  <div class="card border-0">
+                    <div class="card-body text-center text-md-start">
+                      <h3 class="card-title mb-3">Bookmark in one click</h3>
+                      <p class="card-text mb-4 text-grey">A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.</p>
+                      <a href="#" class="btn btn-primary me-4 shadow-sm responsiveButton btn-lg d-none d-md-inline">More Info</a>
+                      
                     </div>
                   </div>
-                  <div class="col-lg col-sm-12  d-flex flex-column justify-content-center mb-custom ">
-                    <div class="card border-0">
-                      <div class="card-body text-center text-md-start">
-                        <h3 class="card-title mb-3">Speedy Searching</h3>
-                        <p class="card-text mb-4 text-grey">A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.</p>
-                        <a href="#" class="btn btn-primary me-4 shadow-sm btn-lg  d-none d-md-inline">More Info</a>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  
                 </div>
-
+                
               </div>
-              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
 
-              <!-- Feature 3 -->
-                <div class="row  mt-custom  d-flex gap-5 ">
-                  <div class="col-lg col-sm-12 position-relative mb-custom ">
-                    <div class="hero-shape-rev"></div>
-                    <div class="text-center">
-                      <img src="img/illustration-features-tab-3.svg" alt="Illustration Hero" class="position-relative img-fluid"/>  
-                    </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+            <!-- Feature 2 -->
+              <div class="row  mt-custom  d-flex gap-5 ">
+                <div class="col-lg col-md-12 position-relative mb-custom ">
+                  <div class="hero-shape-rev"></div>
+                  <div class="text-center">
+                    <img src="img/illustration-features-tab-2.svg" alt="Illustration Hero" class="position-relative img-fluid"/>  
                   </div>
-                  <div class="col-lg col-sm-12  d-flex flex-column justify-content-center mb-custom ">
-                    <div class="card border-0">
-                      <div class="card-body text-center text-md-start">
-                        <h3 class="card-title mb-3">Easy Shearing</h3>
-                        <p class="card-text mb-4 text-grey">A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.</p>
-                        <a href="#" class="btn btn-primary me-4 shadow-sm btn-lg  d-none d-md-inline">More Info</a>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  
                 </div>
-
+                <div class="col-lg col-md-12  d-flex flex-column justify-content-center mb-custom ">
+                  <div class="card border-0">
+                    <div class="card-body text-center text-md-start">
+                      <h3 class="card-title mb-3">Speedy Searching</h3>
+                      <p class="card-text mb-4 text-grey">A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.</p>
+                      <a href="#" class="btn btn-primary me-4 shadow-sm responsiveButton btn-lg  d-none d-md-inline">More Info</a>
+                      
+                    </div>
+                  </div>
+                </div>
+                
               </div>
+
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+            <!-- Feature 3 -->
+              <div class="row  mt-custom  d-flex gap-5 ">
+                <div class="col-lg col-md-12 position-relative mb-custom ">
+                  <div class="hero-shape-rev"></div>
+                  <div class="text-center">
+                    <img src="img/illustration-features-tab-3.svg" alt="Illustration Hero" class="position-relative img-fluid"/>  
+                  </div>
+                </div>
+                <div class="col-lg col-md-12  d-flex flex-column justify-content-center mb-custom ">
+                  <div class="card border-0">
+                    <div class="card-body text-center text-md-start">
+                      <h3 class="card-title mb-3">Easy Shearing</h3>
+                      <p class="card-text mb-4 text-grey">A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.</p>
+                      <a href="#" class="btn btn-primary me-4 shadow-sm responsiveButton btn-lg d-none d-md-inline">More Info</a>
+                      
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+
             </div>
           </div>
         </div>
+      </div>
+    <!-- Fetures -->
+      <div class="row mt-custom justify-content-center">
+        <div class="col-10 col-md-8 mx-auto text-center ">
+          <h2>Download the extension</h2>
+          <p class="text-grey">
+            A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-custom justify-content-center small-row  gx-4">
+        <div class="col-md-4 col-12 mx-auto text-center d-flex justify-content-center align-items-start">
+          <div class="download-card">
+            <div class="download-card-body">
+              <img src="img/logo-chrome.svg" alt="Download Chrome"/>
+              <h3>Add to Chrome</h3>
+              <p>Minimum version 6.2</p>
+             </div>
+             <div class="download-card-button ">
+              <button class="btn btn-primary responsiveButton btn-lg">
+                Add & Install Extension
+              </button>
+             </div>
 
+          </div>
+        </div>
+        <div class="col-md-4 col-12 mx-auto text-center d-flex justify-content-center align-items-start mt-5">
+          <div class="download-card">
+            <div class="download-card-body">
+              <img src="img/logo-firefox.svg" alt="Download Chrome"/>
+              <h3>Add to Firefox</h3>
+              <p>Minimum version 5.2</p>
+             </div>
+             <div class="download-card-button">
+              <button class="btn btn-primary responsiveButton btn-lg">
+                Add & Install Extension
+              </button>
+             </div>
+
+          </div>
+        </div>
+        <div class="col-md-4 col-12 mx-auto text-center mt-5 d-flex justify-content-center align-items-start pt-md-5 pt-0">
+          <div class="download-card">
+            <div class="download-card-body">
+              <img src="img/logo-opera.svg" alt="Download Chrome"/>
+              <h3>Add to Opera</h3>
+              <p>Minimum version 7.2</p>
+             </div>
+             <div class="download-card-button">
+              <button class="btn btn-primary responsiveButton btn-lg">
+                Add & Install Extension
+              </button>
+             </div>
+
+          </div>
+        </div>
+      </div>
 
 
      </div>

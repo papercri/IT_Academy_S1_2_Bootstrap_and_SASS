@@ -1,7 +1,7 @@
-# Proyecto: Landing Page con Bootstrap 5, Vite y SASS
+# Proyecto: Landing Page con Bootstrap 5 y SASS
 
 ## Descripción
-Este proyecto consiste en la creación de una landing page utilizando **Bootstrap 5, Vite y SASS**. El objetivo es replicar un diseño dado, asegurando una correcta estructura y aplicando estilos personalizados mediante SASS.
+Este proyecto consiste en la creación de una landing page utilizando **Bootstrap 5 y SASS**. El objetivo es replicar un diseño dado, asegurando una correcta estructura y aplicando estilos personalizados mediante SASS.
 
 ## Requisitos Previos
 Antes de comenzar, es importante tener conocimientos en:
@@ -36,9 +36,9 @@ Evita estos errores comunes:
    ```bash
    npm install
    ```
-4. Inicia el servidor de desarrollo con Vite:
+4. Inicia el servidor de desarrollo:
    ```bash
-   npm run dev
+   npm start
    ```
 
 ## Ejercicios
@@ -50,8 +50,8 @@ Evita estos errores comunes:
   - No usar CDN de Bootstrap.
   - Definir los colores principales con SASS:
     ```scss
-    $primary-color: #5265E1;
-    $secondary-color: #FA5959;
+    $primary: #5265E1;
+    $secondary: #FA5959;
     ```
 
 #### **Ejercicio 2: Sección de Funcionalidades**
@@ -62,7 +62,7 @@ Evita estos errores comunes:
 #### **Ejercicio 3: Sección de Descargas**
 - Implementar la sección de descargas.
 - Posibilidad de personalizar `cards` de Bootstrap o crear nuevas clases.
-- **Requisitos:** Diseño responsive y botones Bootstrap con `$primary-color`.
+- **Requisitos:** Diseño responsive y botones Bootstrap con `$primary`.
 
 #### **Ejercicio 4: Sección de FAQS**
 - Implementar el componente `Accordion` y personalizarlo.

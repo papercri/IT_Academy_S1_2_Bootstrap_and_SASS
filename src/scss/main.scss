@@ -5,6 +5,7 @@
   $grey-text: #808080;
   $light-grey: #e3e2e2;
   $text-color: #1c1b1b;
+  $dark-blue: #1B1E36;
 
   $custom-margin:5rem;
   
@@ -12,6 +13,12 @@
 body{
   font-family: "Poppins", serif;
   color: $text-color;
+}
+a, button{
+  text-decoration: none;
+}
+.mw-xl {
+  max-width: 1140px; 
 }
 h1, .h1, h2, h3{
   font-weight: 700;
@@ -124,10 +131,6 @@ h2, h3{
       border: none;
       cursor: pointer;
     }
-    .navbar-brand{
-     
-     
-    }
   }
   
   .nav-tabs {
@@ -184,6 +187,8 @@ h2, h3{
       &::after{
         color:$primary;
         font-weight: 700;
+        content: url("../img/icon-arrow.svg");
+        background-image: none;
       }
     }
     
@@ -202,6 +207,27 @@ h2, h3{
     }
     .blog-title{
       font-weight: 500;;
+    }
+    form{
+      input{
+        font-size:12px;
+        width: auto;
+        min-width: 230px;
+        padding: 10px;
+      }
+      button{
+        width:140px;
+        padding:10px;
+        border: 2px solid $secondary;
+      }
+    }
+  }
+  .pie{
+    background-color: $dark-blue;
+    padding:($spacer * 2);
+    color: white;
+    a{
+      color: white;
     }
   }
   @media (max-width: 768px) {
@@ -236,11 +262,24 @@ h2, h3{
         }
       }
     }
+    .blog{
+      form{
+        input{
+          width:100%;
+          margin:0!important;
+          font-size:1rem;
+        }
+        button{
+          width:100%;
+          margin-top:15px;
+        }
+      }
+    }
   }
   @media (min-width: 768px) {
     .responsiveButton {
       padding: 0.375rem 0.75rem; 
-      font-size: 1rem;
+      font-size: .9rem;
     }
     h1, .h1, h2, h3{
       line-height:1.2;

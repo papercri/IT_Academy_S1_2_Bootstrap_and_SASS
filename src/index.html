@@ -10,339 +10,356 @@
     <title>Landing Page con Bootstrap 5, Vite y SASS</title>
   </head>
   <body>
-    <header class="container pt-4 mb-custom">
-    <!-- Nav -->
-      <div class="row mt-4 ">
-       <!-- Logo -->
-        <div class="col">
-          <nav class="navbar navbar-light ">
-              <a class="navbar-brand" href="#">
-                <img src="img/logo-bookmark.svg" alt="Logo Bookmark" />
-              </a>
-          </nav>
-        </div>
-       <!-- Menu -->
-        <div class="col d-flex justify-content-end ">
-          <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="d-flex justify-content-end">
-              <button class="navbar-toggler custom-toggler" type="button" id="mobileMenuToggle">
-                <span class="navbar-toggler-icon fs-3"></span>
-            </button>
-
-          <!-- Mobile Menu -->
-            <div id="mobileMenu" class="mobile-menu p-4">
-              <div class="d-flex justify-content-between w-100">
+    <header>
+        <section class="container pt-4 mb-custom">
+        <!-- Nav -->
+          <div class="row mt-4 ">
+          <!-- Logo -->
+          <div class="col">
+            <nav class="navbar navbar-light ">
                 <a class="navbar-brand" href="#">
-                  <img src="img/logo-bookmarkW.svg" alt="Logo Bookmark" />
+                  <img src="img/logo-bookmark.svg" alt="Logo Bookmark" />
                 </a>
-                <button class="close-menu" id="closeMenu">&times;</button>
-              </div>
-              <ul class="nav flex-column text-uppercase w-100 mt-3">
-                  <li class="nav-item">
-                      <a class="nav-link active" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link btn btn-secondary shadow-sm mt-5" href="#">Login</a>
-                  </li>
-              </ul>
-              <div class="social d-flex gap-5 ">
-                <img src="img/icon-facebook.svg" alt="Logo Facebook" />
-                <img src="img/icon-twitter.svg" alt="Logo Twitter" />
-              </div>
-            </div>
-
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav text-uppercase ">
-                  <li class="nav-item">
-                    <a class="nav-link active px-md-4" aria-current="page" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link px-md-4" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link px-md-4" href="#">Contact</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link btn btn-secondary shadow-sm px-md-4" href="#">Login</a>
-                  </li>
+            </nav>
+          </div>
+          <!-- Menu -->
+          <div class="col d-flex justify-content-end ">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+              <div class="d-flex justify-content-end">
+                <button class="navbar-toggler custom-toggler" type="button" id="mobileMenuToggle">
+                  <span class="navbar-toggler-icon fs-3"></span>
+              </button>
+  
+            <!-- Mobile Menu -->
+              <div id="mobileMenu" class="mobile-menu p-4">
+                <div class="d-flex justify-content-between w-100">
+                  <a class="navbar-brand" href="#">
+                    <img src="img/logo-bookmarkW.svg" alt="Logo Bookmark" />
+                  </a>
+                  <button class="close-menu" id="closeMenu">&times;</button>
+                </div>
+                <ul class="nav flex-column text-uppercase w-100 mt-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-secondary shadow-sm mt-5" href="#">Login</a>
+                    </li>
                 </ul>
+                <div class="social d-flex gap-5 ">
+                  <img src="img/icon-facebook.svg" alt="Logo Facebook" />
+                  <img src="img/icon-twitter.svg" alt="Logo Twitter" />
+                </div>
               </div>
-            </div>
-          </nav>
-
-
-
-          
-        </div>
-      </div>
+  
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav text-uppercase ">
+                    <li class="nav-item">
+                      <a class="nav-link active px-md-4" aria-current="page" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link px-md-4" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link px-md-4" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link btn btn-secondary shadow-sm px-md-4" href="#">Login</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+          </div>
+        </section>
     </header>
-    <main class="container pb-4 mb-custom">
-    <!-- Hero -->
-      <div class="row  d-flex gap-5 ">
-        <div class="col-lg col-md-12  d-flex flex-column justify-content-center  order-last order-lg-first">
-          <div class="card border-0">
-            <div class="card-body text-center text-md-start">
-              <h1 class="card-title mb-3">A simple Bookmark Manager</h1>
-              <p class="card-text mb-4 text-grey">A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.</p>
-              <div class="buttons d-flex flex-nowrap justify-content-center justify-content-md-start">
-                <a href="#" class="btn btn-primary me-4 shadow-sm responsiveButton btn-lg">Get it in Chrome</a>
-                <a href="#" class="btn btn-light shadow-sm responsiveButton btn-lg">Get it in Firefox</a>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-lg col-md-12 position-relative order-first order-lg-last">
-          <div class="hero-shape"></div>
-          <div class="text-center">
-            <img src="img/illustration-hero.svg" alt="Illustration Hero" class="position-relative img-fluid"/>  
-          </div>
-        </div>
-      </div>
-    <!-- Fetures -->
-      <div class="row mt-custom justify-content-center">
-        <div class="col-10 col-md-6 mx-auto text-center">
-          <h2>Features</h2>
-          <p class="text-grey">
-            A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.
-          </p>
-        </div>
-      </div>
-    <!-- Tabs -->
-      <div class="row mt-5 justify-content-center">
-        <div class="col">
-          <nav>
-            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Simple Bookmarking</button>
-              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Speedy Searching</button>
-              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Easy Sharing</button>
-            </div>
-          </nav>
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-
-            <!-- Feature 1 -->
-              <div class="row  mt-custom  d-flex gap-5 ">
-                <div class="col-lg col-md-12 position-relative mb-custom ">
-                  <div class="hero-shape-rev"></div>
-                  <div class="text-center">
-                    <img src="img/illustration-features-tab-1.svg" alt="Illustration Hero" class="position-relative img-fluid"/>  
-                  </div>
-                </div>
-                <div class="col-lg col-md-12  d-flex flex-column justify-content-center mb-custom ">
-                  <div class="card border-0">
-                    <div class="card-body text-center text-md-start">
-                      <h3 class="card-title mb-3">Bookmark in one click</h3>
-                      <p class="card-text mb-4 text-grey">A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.</p>
-                      <a href="#" class="btn btn-primary me-4 shadow-sm responsiveButton btn-lg d-none d-md-inline">More Info</a>
-                      
-                    </div>
-                  </div>
+    <main>
+      <section class="container pb-4 mb-custom">
+      <!-- Hero -->
+        <div class="row  d-flex gap-5 ">
+          <div class="col-lg col-md-12  d-flex flex-column justify-content-center  order-last order-lg-first">
+            <div class="card border-0">
+              <div class="card-body text-center text-md-start">
+                <h1 class="card-title mb-3">A simple Bookmark Manager</h1>
+                <p class="card-text mb-4 text-grey">A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.</p>
+                <div class="buttons d-flex flex-nowrap justify-content-center justify-content-md-start">
+                  <a href="#" class="btn btn-primary me-4 shadow-sm responsiveButton btn-lg">Get it in Chrome</a>
+                  <a href="#" class="btn btn-light shadow-sm responsiveButton btn-lg">Get it in Firefox</a>
                 </div>
                 
               </div>
-
             </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+          </div>
+          <div class="col-lg col-md-12 position-relative order-first order-lg-last">
+            <div class="hero-shape"></div>
+            <div class="text-center">
+              <img src="img/illustration-hero.svg" alt="Illustration Hero" class="position-relative img-fluid"/>  
+            </div>
+          </div>
+        </div>
+      <!-- Features -->
+        <div class="row mt-custom justify-content-center">
+          <div class="col-10 col-md-6 mx-auto text-center">
+            <h2>Features</h2>
+            <p class="text-grey">
+              A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.
+            </p>
+          </div>
+        </div>
+      <!-- Tabs -->
+        <div class="row mt-5 justify-content-center">
+          <div class="col">
+            <nav>
+              <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Simple Bookmarking</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Speedy Searching</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Easy Sharing</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
-            <!-- Feature 2 -->
-              <div class="row  mt-custom  d-flex gap-5 ">
-                <div class="col-lg col-md-12 position-relative mb-custom ">
-                  <div class="hero-shape-rev"></div>
-                  <div class="text-center">
-                    <img src="img/illustration-features-tab-2.svg" alt="Illustration Hero" class="position-relative img-fluid"/>  
-                  </div>
-                </div>
-                <div class="col-lg col-md-12  d-flex flex-column justify-content-center mb-custom ">
-                  <div class="card border-0">
-                    <div class="card-body text-center text-md-start">
-                      <h3 class="card-title mb-3">Speedy Searching</h3>
-                      <p class="card-text mb-4 text-grey">A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.</p>
-                      <a href="#" class="btn btn-primary me-4 shadow-sm responsiveButton btn-lg  d-none d-md-inline">More Info</a>
-                      
+              <!-- Tab 1 -->
+                <div class="row  mt-custom  d-flex gap-5 ">
+                  <div class="col-lg col-md-12 position-relative mb-custom ">
+                    <div class="hero-shape-rev"></div>
+                    <div class="text-center">
+                      <img src="img/illustration-features-tab-1.svg" alt="Illustration Hero" class="position-relative img-fluid"/>  
                     </div>
                   </div>
-                </div>
-                
-              </div>
-
-            </div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-
-            <!-- Feature 3 -->
-              <div class="row  mt-custom  d-flex gap-5 ">
-                <div class="col-lg col-md-12 position-relative mb-custom ">
-                  <div class="hero-shape-rev"></div>
-                  <div class="text-center">
-                    <img src="img/illustration-features-tab-3.svg" alt="Illustration Hero" class="position-relative img-fluid"/>  
-                  </div>
-                </div>
-                <div class="col-lg col-md-12  d-flex flex-column justify-content-center mb-custom ">
-                  <div class="card border-0">
-                    <div class="card-body text-center text-md-start">
-                      <h3 class="card-title mb-3">Easy Shearing</h3>
-                      <p class="card-text mb-4 text-grey">A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.</p>
-                      <a href="#" class="btn btn-primary me-4 shadow-sm responsiveButton btn-lg d-none d-md-inline">More Info</a>
-                      
+                  <div class="col-lg col-md-12  d-flex flex-column justify-content-center mb-custom ">
+                    <div class="card border-0">
+                      <div class="card-body text-center text-md-start">
+                        <h3 class="card-title mb-3">Bookmark in one click</h3>
+                        <p class="card-text mb-4 text-grey">A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.</p>
+                        <a href="#" class="btn btn-primary me-4 shadow-sm responsiveButton btn-lg d-none d-md-inline">More Info</a>
+                        
+                      </div>
                     </div>
                   </div>
+                  
                 </div>
-                
+
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+              <!-- Tab 2 -->
+                <div class="row  mt-custom  d-flex gap-5 ">
+                  <div class="col-lg col-md-12 position-relative mb-custom ">
+                    <div class="hero-shape-rev"></div>
+                    <div class="text-center">
+                      <img src="img/illustration-features-tab-2.svg" alt="Illustration Hero" class="position-relative img-fluid"/>  
+                    </div>
+                  </div>
+                  <div class="col-lg col-md-12  d-flex flex-column justify-content-center mb-custom ">
+                    <div class="card border-0">
+                      <div class="card-body text-center text-md-start">
+                        <h3 class="card-title mb-3">Speedy Searching</h3>
+                        <p class="card-text mb-4 text-grey">A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.</p>
+                        <a href="#" class="btn btn-primary me-4 shadow-sm responsiveButton btn-lg  d-none d-md-inline">More Info</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+              <!-- Tab 3 -->
+                <div class="row  mt-custom  d-flex gap-5 ">
+                  <div class="col-lg col-md-12 position-relative mb-custom ">
+                    <div class="hero-shape-rev"></div>
+                    <div class="text-center">
+                      <img src="img/illustration-features-tab-3.svg" alt="Illustration Hero" class="position-relative img-fluid"/>  
+                    </div>
+                  </div>
+                  <div class="col-lg col-md-12  d-flex flex-column justify-content-center mb-custom ">
+                    <div class="card border-0">
+                      <div class="card-body text-center text-md-start">
+                        <h3 class="card-title mb-3">Easy Shearing</h3>
+                        <p class="card-text mb-4 text-grey">A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.</p>
+                        <a href="#" class="btn btn-primary me-4 shadow-sm responsiveButton btn-lg d-none d-md-inline">More Info</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Download -->
+        <div class="row mt-custom justify-content-center">
+          <div class="col-10 col-md-6 mx-auto text-center ">
+            <h2>Download the extension</h2>
+            <p class="text-grey">
+              A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-custom justify-content-center small-row  gx-4">
+          <div class="col-md-4 col-12 mx-auto text-center d-flex justify-content-center align-items-start">
+            <div class="download-card">
+              <div class="download-card-body">
+                <img src="img/logo-chrome.svg" alt="Download Chrome"/>
+                <h3>Add to Chrome</h3>
+                <p>Minimum version 6.2</p>
+              </div>
+              <div class="download-card-button ">
+                <button class="btn btn-primary responsiveButton btn-lg">
+                  Add & Install Extension
+                </button>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4 col-12 mx-auto text-center d-flex justify-content-center align-items-start mt-5">
+            <div class="download-card">
+              <div class="download-card-body">
+                <img src="img/logo-firefox.svg" alt="Download Chrome"/>
+                <h3>Add to Firefox</h3>
+                <p>Minimum version 5.2</p>
+              </div>
+              <div class="download-card-button">
+                <button class="btn btn-primary responsiveButton btn-lg">
+                  Add & Install Extension
+                </button>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4 col-12 mx-auto text-center mt-5 d-flex justify-content-center align-items-start pt-md-5 pt-0">
+            <div class="download-card">
+              <div class="download-card-body">
+                <img src="img/logo-opera.svg" alt="Download Chrome"/>
+                <h3>Add to Opera</h3>
+                <p>Minimum version 7.2</p>
+              </div>
+              <div class="download-card-button">
+                <button class="btn btn-primary responsiveButton btn-lg">
+                  Add & Install Extension
+                </button>
               </div>
 
             </div>
           </div>
         </div>
-      </div>
-    <!-- Fetures -->
-      <div class="row mt-custom justify-content-center">
-        <div class="col-10 col-md-6 mx-auto text-center ">
-          <h2>Download the extension</h2>
-          <p class="text-grey">
-            A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.
-          </p>
-        </div>
-      </div>
-      <div class="row mt-custom justify-content-center small-row  gx-4">
-        <div class="col-md-4 col-12 mx-auto text-center d-flex justify-content-center align-items-start">
-          <div class="download-card">
-            <div class="download-card-body">
-              <img src="img/logo-chrome.svg" alt="Download Chrome"/>
-              <h3>Add to Chrome</h3>
-              <p>Minimum version 6.2</p>
-             </div>
-             <div class="download-card-button ">
-              <button class="btn btn-primary responsiveButton btn-lg">
-                Add & Install Extension
-              </button>
-             </div>
-
+      <!-- FAQ -->
+        <div class="row mt-custom justify-content-center">
+          <div class="col-10 col-md-6 mx-auto text-center ">
+            <h2>Frequently Asked Questions</h2>
+            <p class="text-grey">
+              A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.
+            </p>
           </div>
         </div>
-        <div class="col-md-4 col-12 mx-auto text-center d-flex justify-content-center align-items-start mt-5">
-          <div class="download-card">
-            <div class="download-card-body">
-              <img src="img/logo-firefox.svg" alt="Download Chrome"/>
-              <h3>Add to Firefox</h3>
-              <p>Minimum version 5.2</p>
-             </div>
-             <div class="download-card-button">
-              <button class="btn btn-primary responsiveButton btn-lg">
-                Add & Install Extension
-              </button>
-             </div>
-
-          </div>
-        </div>
-        <div class="col-md-4 col-12 mx-auto text-center mt-5 d-flex justify-content-center align-items-start pt-md-5 pt-0">
-          <div class="download-card">
-            <div class="download-card-body">
-              <img src="img/logo-opera.svg" alt="Download Chrome"/>
-              <h3>Add to Opera</h3>
-              <p>Minimum version 7.2</p>
-             </div>
-             <div class="download-card-button">
-              <button class="btn btn-primary responsiveButton btn-lg">
-                Add & Install Extension
-              </button>
-             </div>
-
-          </div>
-        </div>
-      </div>
-    <!-- FAQ -->
-      <div class="row mt-custom justify-content-center">
-        <div class="col-10 col-md-6 mx-auto text-center ">
-          <h2>Frequently Asked Questions</h2>
-          <p class="text-grey">
-            A clean and simple interface to organize your favorite websites. Open new browser tab and see your sites open instantly. Try it for free.
-          </p>
-        </div>
-      </div>
-      <div class="row mt-4 ">
-        <div class="col-10 col-md-8 mx-auto text-left">
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  What is Bookmark?
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        <div class="row mt-4 ">
+          <div class="col-10 col-md-8 mx-auto text-left">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    What is Bookmark?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    How can I request a new Browser?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Is there a mobile app?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    What about other Chromium Browsers?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  How can I request a new Browser?
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-              </div>
+            <div class="mt-5 d-flex  justify-content-center">
+              <a href="#" class="btn btn-primary me-4 shadow-sm responsiveButton btn-lg">More Info</a>       
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Is there a mobile app?
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  What about other Chromium Browsers?
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-              </div>
-            </div>
-          </div>
-          <div class="mt-5 d-flex  justify-content-center">
-            <a href="#" class="btn btn-primary me-4 shadow-sm responsiveButton btn-lg">More Info</a>       
           </div>
         </div>
-      </div>
+      </section>
     </main>
-  <!-- Blog -->
-    <section class="container-fluid blog">
-      <div class="row text-center small-row">
-        <div class="col-10 col-md-5 mx-auto text-center">
-          <p class="blog-sup-title">35.000+ already joined</p>
-          <h3 class="blog-title">Stay up-to-date with what we are doing</h3>
-        
-        
-          <form class=" mt-4 needs-validation" novalidate>
-            <div class="form-input w-100 d-flex flex-wrap justify-content-between">
-              <input type="email" class="form-control w-auto inline-block me-4"  placeholder="Enter your email address" id="validationCustom01" required>
-              <button class="btn btn-secondary shadow-sm text-nowrap w-auto inline-block" type="submit">Submit form</button>
-              <p class="invalid-feedback block">
-                Please enter your email address.
-              </p>
-            </div>
-            
-
-       
-          </form>
+  <!-- Footer -->
+    <footer>
+     <!-- Blog -->
+      <section class="container-fluid blog">
+        <div class="row text-center small-row">
+          <div class="col-12 col-sm-8 col-md-6 mx-auto text-center">
+            <p class="blog-sup-title">35.000+ already joined</p>
+            <h3 class="blog-title">Stay up-to-date with what we are doing</h3>
+            <form class=" mt-4 needs-validation" novalidate>
+              <div class="form-input w-100 d-flex flex-wrap justify-content-center">
+                <input type="email" class="form-control inline-block me-2 rounded"  placeholder="Enter your email address " id="validationCustom01" required>
+                <button class="btn btn-secondary shadow-sm text-nowrap inline-block responsiveButton rounded" type="submit">Contact Us</button>
+                <p class="invalid-feedback block">
+                  Please enter your email address.
+                </p>
+              </div>
+            </form>
+          </div>
         </div>
-        
-      </div>
-    </section>
-  <!-- Blog -->
-   <footer>
-
-   </footer>
+      </section>
+    <!-- Pie -->
+      <section class="container-fluid pie">
+        <div class="row mx-auto mw-xl d-flex justify-content-lg-between justify-content-center gap-5">
+          <div class="col-lg-2 col-12 d-flex justify-content-lg-start justify-content-center">
+            <a class="navbar-brand" href="#">
+            <img src="img/logo-bookmarkW.svg" alt="Logo Bookmark" />
+          </a>
+          </div>
+          <div class="col-lg-6 col-12  d-flex justify-content-lg-start justify-content-center">
+            <ul class="nav text-uppercase d-flex flex-column flex-md-row justify-content-lg-start justify-content-center gap-5">
+              <li class="text-center"><a href="#">Features</a></li>
+              <li class="text-center"><a href="#">Pricing</a></li>
+              <li class="text-center"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-12 d-flex gap-5  d-flex justify-content-lg-start justify-content-center">
+            <img src="img/icon-facebook.svg" alt="Logo Facebook" />
+            <img src="img/icon-twitter.svg" alt="Logo Twitter" />
+          </div>
+        </div>
+      </section>
+    </footer>
+    
+ 
+   
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

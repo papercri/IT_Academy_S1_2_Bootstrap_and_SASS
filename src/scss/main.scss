@@ -3,13 +3,12 @@
   $primary: #5265E1;
   $secondary: #FA5959;
   $grey-text: #808080;
-  $light-grey: #e3e2e2;
+  $light-grey: #f8f9fa;
   $text-color: #1c1b1b;
   $dark-blue: #1B1E36;
 
   $custom-margin:5rem;
   
-
 body{
   font-family: "Poppins", serif;
   color: $text-color;
@@ -20,11 +19,14 @@ a, button{
 .mw-xl {
   max-width: 1140px; 
 }
-h1, .h1, h2, h3{
+h1, h2, h3{
   font-weight: 700;
 }
 h2, h3{
   margin-bottom: $spacer;
+}
+.text-grey{
+  color: $grey-text;
 }
 .mt-custom {
   margin-top: $custom-margin;
@@ -33,258 +35,311 @@ h2, h3{
   margin-bottom: $custom-margin;
 }
 .btn-primary{
-  background-color: $primary
+  background-color: $primary;
+  border:2px solid  $primary;
+  &:hover{
+    background-color:white;
+    color: $primary;
+    border-color:  $primary;
+  }
 }
 .btn-secondary{
-    background-color: $secondary;
-    color:white
+  background-color: $secondary;
+  border:2px solid  $secondary;
+  color:$white;
+  &:hover{
+    background-color: white;
+    border-color: $secondary;
+    color:$secondary;
   }
-  .text-grey{
-    color: $grey-text;
+}
+.btn-light{
+  border:2px solid  $white;
+  background-color: white;
+  color:   $text-color;
+  &:hover{
+    background-color: white;
+    border-color:   $grey-text;
   }
-  .small-row {
-    max-width: 950px;  
-    margin-left: auto;
-    margin-right: auto;
+}
+.small-row {
+  max-width: 950px;  
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-shape{
+  background-color: $primary;
+  border-bottom-left-radius: $border-radius-pill;
+  border-top-left-radius: $border-radius-pill;
+  width:70%;
+  height:70%;
+  position:absolute;
+  bottom:0;
+  right:-30px;
+}
+.hero-shape-rev{
+  @extend .hero-shape;
+  border-bottom-right-radius: $border-radius-pill;
+  border-top-right-radius: $border-radius-pill;
+  border-bottom-left-radius:0;
+  border-top-left-radius: 0;
+  bottom:auto;
+  right:auto;
+  bottom:-50px;
+  left:-30px;
+}
+.navbar{
+  .navbar-toggler {
+    border:none!important;
+    color:$text-color;
+    font-size: $font-size-lg;
+    &:focus{
+      box-shadow: none;
+    }
   }
-  .hero-shape{
-    background-color: $primary;
-    border-bottom-left-radius: $border-radius-pill;
-    border-top-left-radius: $border-radius-pill;
-    width:70%;
-    height:70%;
-    position:absolute;
-    bottom:0;
-    right:-30px;
+  .navbar-collapse {
+    padding: $navbar-padding-y $navbar-padding-x;
+    border: 1px solid;
+    border-radius: $border-radius;
+    transition: $transition-base;
+    border: none;
   }
-  .hero-shape-rev{
-    background-color: $primary;
-    border-bottom-right-radius: $border-radius-pill;
-    border-top-right-radius: $border-radius-pill;
-    width:70%;
-    height:70%;
-    position:absolute;
-    bottom:-50px;
-    left:-30px;
+  .navbar-toggler{
+    padding:0;
   }
-  .navbar{
-    .navbar-toggler {
-      border:none!important;
-      color:$text-color;
-      font-size: $font-size-lg;
-      &:focus{
-        box-shadow: none;
+}
+.mobile-menu {
+  position: fixed;
+  display:none;
+  z-index:20;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(35,38,60, 0.95);
+  flex-direction: column;
+  align-items: center ;
+  justify-content:space-between;
+  text-align: center;
+  &.active {
+    display:flex;
+  }
+  .nav-item{
+    border-top:2px solid  #ffffff39;
+  }
+  .nav-link {
+    color: white;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    &.btn{
+      background-color: transparent;
+      border: 2px solid  white;
+      color: white;
+    }
+  }
+  .close-menu {
+    position: relative;
+    top:-10px;
+    font-size: 2.8rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+.nav-tabs {
+  border: none;
+  .nav-link{
+    border:none;
+    padding:10px 40px 20px;
+    border-bottom:2px solid $light-grey;
+    color:$grey-text;
+    &.active{
+      border-bottom:4px solid $secondary;
+    }
+    &:hover{
+      color: $secondary;
+      border-bottom:2px solid $light-grey;
+    }
+  }
+}
+.download-card{
+  display:flex;
+  background-color: white;
+  flex-direction: column;
+  border-radius: $border-radius-lg;
+  box-shadow: $box-shadow;
+  width:100%;
+  max-width: 300px;
+  .download-card-body{
+    padding:($spacer * 2) $spacer;
+    img{
+      text-align: center;
+      padding-bottom: $spacer;
+    }
+    h3{
+      font-size:$font-size-lg;
+    }
+    p{
+      font-size:$font-size-sm;
+      color:$grey-text;
+      padding-bottom: $spacer;
+    }
+    &:after{
+      content:"";
+      display: block;
+      border: 1px dashed $light-grey;
+    }
+  }
+  .download-card-button{
+    padding:0 $spacer ($spacer * 2) $spacer;
+  }
+}
+.accordion{
+  border-top:1px solid $border-color;
+  border-bottom:1px solid $border-color;
+  .accordion-button {
+      --bs-accordion-btn-active-icon: none;
+  }
+  button{
+    &::after{
+      color:$primary;
+      font-weight: 700;
+      content: url("../img/icon-arrow.svg");
+      background-image: none;
+    }
+    &:focus{
+      background-color: transparent;
+      box-shadow:none;
+    }
+    &:not(.collapsed) {
+      background-color: transparent;
+      box-shadow:none;
+      &::after{
+        content: url("../img/icon-arrow2.svg");
       }
     }
-    .navbar-collapse {
-      padding: $navbar-padding-y $navbar-padding-x;
-      border: 1px solid;
-      border-radius: $border-radius;
-      transition: $transition-base;
-      border: none;
-   
-    }
-    .navbar-toggler{
-      padding:0;
-    }
-
   }
-  .mobile-menu {
-    position: fixed;
-    display:none;
-    z-index:20;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(35,38,60, 0.95);
-    flex-direction: column;
-    align-items: center ;
-    justify-content:space-between;
-    text-align: center;
-
-    &.active {
-      display:flex;
-    }
-    .nav-item{
-      border-top:2px solid  #ffffff39;
   
-     
+}
+.blog{
+  background-color: $primary;
+  padding:($spacer * 3);
+  color: white;
+  .blog-sup-title{
+    text-transform: uppercase;
+    font-size: 10px;
+    color:$light-grey;
+    letter-spacing:.4em;
+    font-weight: 600;;
+    margin-bottom: ($spacer * 2);
+  }
+  .blog-title{
+    font-weight: 500;;
+  }
+  form{
+    input{
+      font-size:12px;
+      width: auto;
+      min-width: 65%;
+      padding: 10px;
     }
-    .nav-link {
-      color: white;
-      font-size: 1.5rem;
-      margin: 10px 0;
-      &.btn{
-        background-color: transparent;
-        border: 2px solid  white;
-        color: white;
-      }
+    button{
+      width: auto;
+      min-width: 30%;
+      padding:10px;
+      border: 2px solid $secondary;
     }
-    .close-menu {
-     position: relative;
-      top:-10px;
-      font-size: 2.8rem;
-      color: white;
-
-      background: none;
-      border: none;
-      cursor: pointer;
+    .invalid-feedback{
+      border: 2px solid $secondary;
+      background-color: $secondary;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      width: auto;
+      min-width: 65%;
+      color:white;
+      text-align:left;
+      padding:3px;
+      position:relative;
+      top:-8px;
+      font-size:12px;
     }
+  }
+  .was-validated .form-control:invalid, .form-control.is-invalid {
+      border-color:$secondary;
+  }
+}
+.pie{
+  background-color: $dark-blue;
+  padding:($spacer * 2);
+  color: white;
+  a{
+    color: white;
+    &:hover{
+      color:$secondary;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .mt-custom {
+    margin-top: 4rem;
+  }
+  .mb-custom {
+    margin-bottom: 4rem;
   }
   
   .nav-tabs {
-    border: none;
-    .nav-link{
-      border:none;
-      padding:10px 40px 20px;
-      border-bottom:2px solid $light-grey;
-      color:$grey-text;
-      &.active{
-        border-bottom:4px solid $secondary;
-      }
-    }
-  }
- 
-  .download-card{
-    display:flex;
-    background-color: white;
     flex-direction: column;
-    border-radius: $border-radius-lg;
-    box-shadow: $box-shadow;
-    width:100%;
-    max-width: 300px;
-    .download-card-body{
-      padding:($spacer * 2) $spacer;
-      img{
-        text-align: center;
-        padding-bottom: $spacer;
-      }
-      h3{
-        font-size:$font-size-lg;
-      }
-      p{
-        font-size:$font-size-sm;
-        color:$grey-text;
-        padding-bottom: $spacer;
-      }
-      &:after{
-        content:"";
-        display: block;
-        border: 1px dashed $light-grey;
+    border-top:1px solid $light-grey;
+    .nav-link{
+      border-bottom:1px solid $light-grey;
+      padding:20px 10px 10px;
+      position: relative;
+      &.active{
+        border-bottom:1px solid $light-grey;
+        background-color: transparent;
+        &::after{
+          content:"";
+          width:150px;
+          height:4px;
+          background-color: $secondary;
+          display: block;
+          position: relative;
+          margin:0 auto;
+          top:10px;
+        }
+        
       }
     }
-    .download-card-button{
-      padding:0 $spacer ($spacer * 2) $spacer;
-    }
-
-    
-  }
-  .accordion{
-    border-top:1px solid $border-color;
-    border-bottom:1px solid $border-color;
-    button{
-      &::after{
-        color:$primary;
-        font-weight: 700;
-        content: url("../img/icon-arrow.svg");
-        background-image: none;
-      }
-    }
-    
   }
   .blog{
-    background-color: $primary;
-    padding:($spacer * 3);
-    color: white;
-    .blog-sup-title{
-      text-transform: uppercase;
-      font-size: 10px;
-      color:$light-grey;
-      letter-spacing:.4em;
-      font-weight: 600;;
-      margin-bottom: ($spacer * 2);
-    }
-    .blog-title{
-      font-weight: 500;;
-    }
     form{
       input{
-        font-size:12px;
-        width: auto;
-        min-width: 230px;
-        padding: 10px;
+        width:100%;
+        margin:0!important;
+        font-size:1rem;
+        order:1;
       }
       button{
-        width:140px;
-        padding:10px;
-        border: 2px solid $secondary;
+        width:100%;
+        margin-top:15px;
+        order:3;
+      }
+      .invalid-feedback{
+        width:100%;
+        order:2;
       }
     }
   }
-  .pie{
-    background-color: $dark-blue;
-    padding:($spacer * 2);
-    color: white;
-    a{
-      color: white;
-    }
+}
+@media (min-width: 768px) {
+  .responsiveButton {
+    padding: 0.375rem 0.75rem; 
+    font-size: .9rem;
   }
-  @media (max-width: 768px) {
-    .mt-custom {
-      margin-top: 4rem;
-    }
-    .mb-custom {
-      margin-bottom: 4rem;
-    }
-   
-    .nav-tabs {
-      flex-direction: column;
-      border-top:1px solid $light-grey;
-      .nav-link{
-        border-bottom:1px solid $light-grey;
-        padding:20px 10px 10px;
-        position: relative;
-        &.active{
-          border-bottom:1px solid $light-grey;
-          background-color: transparent;
-          &::after{
-            content:"";
-            width:150px;
-            height:4px;
-            background-color: $secondary;
-            display: block;
-            position: relative;
-            margin:0 auto;
-            top:10px;
-          }
-          
-        }
-      }
-    }
-    .blog{
-      form{
-        input{
-          width:100%;
-          margin:0!important;
-          font-size:1rem;
-        }
-        button{
-          width:100%;
-          margin-top:15px;
-        }
-      }
-    }
+  h1, .h1, h2, h3{
+    line-height:1.2;
   }
-  @media (min-width: 768px) {
-    .responsiveButton {
-      padding: 0.375rem 0.75rem; 
-      font-size: .9rem;
-    }
-    h1, .h1, h2, h3{
-      line-height:1.2;
-    }
-  }
-
+}
 
 

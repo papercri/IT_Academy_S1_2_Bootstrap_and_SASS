@@ -1,6 +1,9 @@
 # Proyecto: Landing Page con Bootstrap 5 y SASS
 
 ## Descripción
+
+**Link**: [Bootstrap Layout](https://it-academy-s1-2-bootstrap-and-sass.vercel.app/)  
+
 Este proyecto consiste en la creación de una landing page utilizando **Bootstrap 5 y SASS**. El objetivo es replicar un diseño dado, asegurando una correcta estructura y aplicando estilos personalizados mediante SASS.
 
 ## Requisitos Previos

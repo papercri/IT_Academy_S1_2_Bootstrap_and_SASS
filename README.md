@@ -6,20 +6,6 @@
 
 Este proyecto consiste en la creación de una landing page utilizando **Bootstrap 5 y SASS**. El objetivo es replicar un diseño dado, asegurando una correcta estructura y aplicando estilos personalizados mediante SASS.
 
-## Requisitos Previos
-Antes de comenzar, es importante tener conocimientos en:
-- **HTML y SASS**
-- **Bootstrap 5**: Sistema de columnas y validaciones
-- **Vite** para la gestión y optimización del proyecto
-- **Media Queries en Bootstrap 5**
-
-## Consideraciones Importantes
-Evita estos errores comunes:
-- No añadas etiquetas innecesarias de Bootstrap en los `div`.
-- Mantén la estructura `container -> row -> col`.
-- Respeta el diseño establecido sin modificaciones creativas.
-- Asegúrate de importar Bootstrap correctamente en el proyecto.
-
 ## Tecnologías Utilizadas
 - **HTML5**
 - **SASS** para personalizar Bootstrap

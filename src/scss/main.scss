@@ -99,10 +99,14 @@ h2, h3{
   }
   .navbar-collapse {
     padding: $navbar-padding-y $navbar-padding-x;
-    border: 1px solid;
     border-radius: $border-radius;
     transition: $transition-base;
     border: none;
+    .nav-link{
+      &:hover{
+        color:$secondary;
+      }
+    }
   }
   .navbar-toggler{
     padding:0;

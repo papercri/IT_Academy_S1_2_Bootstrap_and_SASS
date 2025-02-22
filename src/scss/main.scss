@@ -279,6 +279,12 @@ h2, h3{
       color:$secondary;
     }
   }
+  .social{
+    &:hover{
+      filter: invert(76%) sepia(71%) saturate(6864%) hue-rotate(331deg) brightness(107%) contrast(96%);
+    }
+  }
+
 }
 @media (max-width: 768px) {
   .mt-custom {

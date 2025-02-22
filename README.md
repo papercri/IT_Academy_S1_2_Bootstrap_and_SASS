@@ -43,7 +43,10 @@ Evita estos errores comunes:
    ```bash
    npm start
    ```
-
+5. Abre en tu navegador la url que sale en la terminal, por ejemplo:
+   ```bash
+      http://localhost:8080/
+   ```
 ## Ejercicios
 ### Nivel 1
 #### **Ejercicio 1: Barra de Navegación y Contenido Principal**
